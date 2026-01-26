@@ -1,0 +1,36 @@
+package revisao;
+
+import java.util.Scanner;
+
+public class Jokenpo {
+
+	public static void main(String[] args) {
+		
+		/* Regras:
+		 * Pedra ganha de Tesoura
+		 * Tesoura ganha de Papel
+		 * Papel ganha de Pedra
+		 * */
+		
+		Scanner scan = new Scanner(System.in);
+		Random r = new Random();
+		
+//		String menu = """
+//				*** Jokenpo ***
+//				Escolha sua jogada:
+//				1 - Pedra
+//				2 - Papel
+//				3 - Tesoura
+//				""";
+//		System.out.print(menu);
+		System.out.println("*** Jokenpo ***");
+		System.out.println("Escolha sua jogada:");
+		System.out.println("1 - Pedra");
+		System.out.println("2 - Papel");
+		System.out.println("3 - Tesoura");
+		int escolhaUsuario = scan.nextInt();
+		
+		
+	}
+
+}

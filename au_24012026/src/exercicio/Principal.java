@@ -1,0 +1,24 @@
+package exercicio;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite o nome do produto:");
+		String nome = scan.nextLine();
+		
+		System.out.println("Digite o valor do produto:");
+		double valor = scan.nextDouble();
+		
+		System.out.println("Digite a quantidade em estoque:");
+		int quantidade = scan.nextInt();
+		
+		Produto p1 = new Produto(nome, valor, quantidade);
+		System.out.printf("Valor total em estoque da %s é: R$ %.2f", p1, p1.calcularValorTotalEstoque());
+		
+	}
+
+}

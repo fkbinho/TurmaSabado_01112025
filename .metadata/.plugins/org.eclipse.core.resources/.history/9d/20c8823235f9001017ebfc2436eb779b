@@ -1,0 +1,12 @@
+package exercicio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		Produto p1 = new Produto("Escova de Dentes", 7.50, 10);
+		System.out.printf("Valor total em estoque da %s é: R$ %.2f",p1.nome, p1.calcularValorTotalEstoque());
+		
+	}
+
+}

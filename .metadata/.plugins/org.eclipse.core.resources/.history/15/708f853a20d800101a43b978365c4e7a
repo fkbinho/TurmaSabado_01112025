@@ -1,0 +1,72 @@
+package revisao;
+
+import java.util.Scanner;
+
+public class EstruturaCondicional {
+
+	public static void main(String[] args) {
+		
+		// SCANNER
+		Scanner scan = new Scanner(System.in);
+		
+		// SAIDA DE DADOS
+		System.out.println("Digite sua idade: ");
+		int idade = scan.nextInt();
+		
+		System.out.print("> ");
+		System.out.printf("Idade digitada: %d anos%n", idade);
+		
+		System.out.println("-------------------------\n");
+		// TIPOS DE DADOS
+		/* 
+		 * Tipos Primitivos:
+		 * - int
+		 * - byte
+		 * - short
+		 * - long
+		 * - double
+		 * - float
+		 * - char
+		 * - boolean
+		 * 
+		 * Tipos por referência:
+		 * - String
+		 * - Scanner
+		 * */
+		// OPERADORES
+		/* Operadores Aritméticos:
+		 * - + * - / %
+		 * 
+		 * Operadores Relacionais:
+		 * - > < >= <= == !=
+		 * 
+		 * Operadores Lógicos:
+		 * - && || !
+		 * 
+		 * Operadores de Atribuição:
+		 * - = += -= *= /= %=
+		 * 
+		 * Operadores unários:
+		 * ++ --
+		 * 
+		 * */
+		// ESTRUTURA CONDICIONAL
+//		Jovens: Até 19 anos.
+//		Adultos: 20 a 59 anos
+//		Idosos: 60 anos ou mais.
+//		Estatuto da Criança e do Adolescente (ECA): 
+//		Criança (até 12 anos incompletos), 
+//		Adolescente (12 a 19 anos). 
+		if (idade <= 19) {
+			System.out.println("Você é jovem.");
+			if (idade <= 11) {
+				System.out.println("Você é uma criança.");
+			} else {
+				System.out.println("Você é um adolescente.");
+			}
+		} else {
+			System.out.println("Você é adulto.");
+		}
+	}
+
+}

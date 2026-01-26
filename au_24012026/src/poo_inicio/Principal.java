@@ -1,0 +1,40 @@
+package poo_inicio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+//		tipo   var     =  valor
+		Carro meuCarro = new Carro("Toyota", "Corolla", 2015); // instanciando um objeto da classe Carro(criar)
+		System.out.println("Meu carro: " + meuCarro.marca);
+		System.out.println("Meu carro: " + meuCarro.modelo);
+		System.out.println("Meu carro: " + meuCarro.ano);
+
+//		meuCarro.ligar();
+		
+		Carro seuCarro = new Carro("Honda");
+		seuCarro.modelo = "Civic";
+		seuCarro.ano = 2019;
+		
+//		seuCarro.ligar();
+		
+		Carro carroDoVizinho = meuCarro;
+		
+		carroDoVizinho.marca = "Mercedes";
+		meuCarro.marca = "Toyota";
+		
+//		System.out.println("Meu carro: " + meuCarro.marca);
+//		System.out.println("Carro do Vizinho: " + carroDoVizinho.marca);
+		
+		System.out.println("----------------------");
+		
+		System.out.println("Informações do veiculo");
+		System.out.println(meuCarro.exibirDados());
+		System.out.println("----------------------");
+		System.out.println("Informações do veiculo");
+		System.out.println(seuCarro.exibirDados());
+		
+
+	}
+
+}

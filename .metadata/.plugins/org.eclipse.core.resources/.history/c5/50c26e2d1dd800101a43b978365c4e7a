@@ -1,0 +1,24 @@
+package revisao;
+
+import java.util.Scanner;
+
+public class EstruturaCondicional {
+
+	public static void main(String[] args) {
+		
+		// SCANNER
+		Scanner scan = new Scanner(System.in);
+		
+		// SAIDA DE DADOS
+		System.out.println("Digite sua idade: ");
+		int idade = scan.nextInt();
+		
+		System.out.print("> ");
+		System.out.printf("Idade digitada: %d anos%n", idade);
+		// ESTRUTURA CONDICIONAL
+		// TIPOS DE DADOS
+		// OPERADORES
+	
+	}
+
+}

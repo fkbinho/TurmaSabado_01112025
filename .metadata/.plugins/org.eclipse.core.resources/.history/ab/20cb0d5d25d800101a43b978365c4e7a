@@ -1,0 +1,25 @@
+package revisao;
+
+import java.util.Scanner;
+
+public class Jokenpo {
+
+	public static void main(String[] args) {
+		
+		/* Regras:
+		 * Pedra ganha de Tesoura
+		 * Tesoura ganha de Papel
+		 * Papel ganha de Pedra
+		 * */
+		
+		Scanner scan = new Scanner(System.in);
+		
+		String menu = "Escolha uma opção:\n"
+				+ "1 - Pedra\n"
+				+ "2 - Papel\n"
+				+ "3 - Tesoura\n";
+		
+		System.out.println(menu);
+	}
+
+}

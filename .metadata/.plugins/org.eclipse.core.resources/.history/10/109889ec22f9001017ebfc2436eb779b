@@ -1,0 +1,10 @@
+package poo_inicio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

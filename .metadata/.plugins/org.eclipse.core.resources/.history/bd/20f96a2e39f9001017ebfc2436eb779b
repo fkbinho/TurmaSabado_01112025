@@ -1,0 +1,25 @@
+package exercicio;
+
+import java.util.Scanner;
+
+public class Principal2 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		Funcionario f1 = new Funcionario();
+		
+		System.out.println("Digite o nome: ");
+		f1.nome = scan.nextLine();
+		
+		System.out.println("Digite o cargo: ");
+		f1.cargo = scan.nextLine();
+		
+		System.out.println("Digite o salário: ");
+		f1.salario = scan.nextDouble();
+
+		System.out.println(f1.aumentarSalario());
+		
+	}
+
+}

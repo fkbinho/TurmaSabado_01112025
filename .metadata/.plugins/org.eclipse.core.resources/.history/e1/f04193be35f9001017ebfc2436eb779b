@@ -1,0 +1,18 @@
+package exercicio;
+
+public class Produto {
+	String nome;
+	double preco;
+	int quantidade;
+	
+	Produto(String nome, double preco, int quantidade){
+		this.nome = nome;
+		this.preco = preco;
+		this.quantidade = quantidade;
+	}
+	
+	double calcularValorTotalEstoque(){
+		return preco * quantidade;
+	}
+
+}
